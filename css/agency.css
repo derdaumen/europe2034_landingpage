@@ -11,7 +11,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #ffc857;
+    border-color: #eab445;
     border-width: 3px;
 }
 
@@ -24,12 +24,13 @@ hr.light {
 }
 
 .text-primary {
-    color: #ffc857;
+    color: #eab445;
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.75;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 p.large {
@@ -45,7 +46,7 @@ a.active {
 }
 
 a {
-    color: #ffc857;
+    color: #eab445;
 }
 
 a:hover,
@@ -70,6 +71,19 @@ h6 {
     margin: 0 auto;
 }
 
+.bg-primary {
+    background-color: #2ca8c2;
+    /*background-color: #eab445;
+    background-color: #7cc576;
+    background-color: #F15F74;
+    background-color: #515151;*/
+}
+
+.bg-gray {
+    color: #fff;
+    background-color: #515151;
+}
+
 .bg-light-gray {
     background-color: #f7f7f7;
 }
@@ -78,12 +92,16 @@ h6 {
     background-color: #222;
 }
 
+.ibg-bg {
+  transform: matrix(1.02, 0, 0, 1.02, 0, 0);
+}
+
 .btn-primary {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-    border-color: #ffc857;
-    background-color: #ffc857;
+    border-color: #eab445;
+    background-color: #eab445;
 }
 
 .btn-primary:hover,
@@ -117,16 +135,17 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    border-color: #ffc857;
-    background-color: #ffc857;
+    border-color: #eab445;
+    background-color: #eab445;
 }
 
 .btn-primary .badge {
-    color: #ffc857;
+    color: #eab445;
     background-color: #fff;
 }
 
-.btn-xl {
+.btn-xl,
+.btn-x2 {
     font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -139,6 +158,10 @@ fieldset[disabled] .btn-primary.active {
 
     box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
+.btn-x2 {
+  border-color: #eab445;
+  background-color: #eab445;
+}
 
 .btn-xl:hover,
 .btn-xl:focus,
@@ -150,9 +173,22 @@ fieldset[disabled] .btn-primary.active {
     background-color: #1b97b1;
 }
 
+.btn-x2:hover,
+.btn-x2:focus,
+.btn-x2:active,
+.btn-x2.active,
+.open .dropdown-toggle.btn-x2 {
+    color: #fff;
+    border-color: #fec503;
+    background-color: #fec503;
+}
+
 .btn-xl:active,
 .btn-xl.active,
-.open .dropdown-toggle.btn-xl {
+.open .dropdown-toggle.btn-xl,
+.btn-x2:active,
+.btn-x2.active,
+.open .dropdown-toggle.btn-x2 {
     background-image: none;
 }
 
@@ -171,12 +207,36 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl.disabled.active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
-    border-color: #ffc857;
-    background-color: #ffc857;
+    border-color: #2ca8c2;
+    background-color: #2ca8c2;
+}
+
+.btn-x2.disabled,
+.btn-x2[disabled],
+fieldset[disabled] .btn-xl,
+.btn-x2.disabled:hover,
+.btn-x2[disabled]:hover,
+fieldset[disabled] .btn-xl:hover,
+.btn-x2.disabled:focus,
+.btn-x2[disabled]:focus,
+fieldset[disabled] .btn-xl:focus,
+.btn-x2.disabled:active,
+.btn-x2[disabled]:active,
+fieldset[disabled] .btn-xl:active,
+.btn-x2.disabled.active,
+.btn-x2[disabled].active,
+fieldset[disabled] .btn-xl.active {
+    border-color: #eab445;
+    background-color: #eab445;
 }
 
 .btn-xl .badge {
-    color: #ffc857;
+    color: #2ca8c2;
+    background-color: #fff;
+}
+
+.btn-x2 .badge {
+    color: #eab445;
     background-color: #fff;
 }
 
@@ -188,7 +248,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-brand {
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
-    color: #ffc857;
+    color: #eab445;
     padding: 5px 15px;
 }
 
@@ -214,7 +274,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #1b97b1;
+    background-color: #2ca8c2;
 }
 
 .navbar-default .nav li a {
@@ -234,7 +294,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav > .active > a {
     color: #fff;
     border-radius: 0;
-    background-color: #ffc857;
+    background-color: #eab445;
 }
 
 .navbar-default .navbar-nav > .active > a:hover,
@@ -278,7 +338,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #515151;
-    background-image: url(../img/header_bg.jpg);
+    background-color: #2ca8c2;
+    /*background-image: url(../img/header_bg.jpg);*/
     background-repeat: none;
     background-attachment: scroll;
     background-position: center;
@@ -301,7 +362,7 @@ header .header-content .intro-text h1 {
     text-transform: uppercase;
     font-weight: 700;
     margin-bottom: 50px;
-    color: #ffc857;
+    color: #eab445;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
 }
 
@@ -378,6 +439,24 @@ section h3.section-subheading {
     section {
         padding: 150px 0;
     }
+}
+#what {
+    /*position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    color: #515151;*/
+    background-image: url(../img/people_silhouettes_grey.png);
+    /*background-image: url(../img/people_silhouettes_orange.png);
+    background-image: url(../img/people_silhouettes_green.png);
+    background-image: url(../img/people_silhouettes_blue.png);*/
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .service-heading {
@@ -528,7 +607,7 @@ section h3.section-subheading {
     color: #fff;
     border: 7px solid #f1f1f1;
     border-radius: 100%;
-    background-color: #ffc857;
+    background-color: #eab445;
 }
 
 .timeline > li .timeline-image h4 {
@@ -702,7 +781,7 @@ section#contact .form-group textarea.form-control {
 }
 
 section#contact .form-control:focus {
-    border-color: #ffc857;
+    border-color: #eab445;
     box-shadow: none;
 }
 
@@ -780,7 +859,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-    background-color: #ffc857;
+    background-color: #eab445;
 }
 
 .btn:focus,
@@ -867,12 +946,12 @@ ul.social-buttons li a:active {
 }
 
 ::-moz-selection {
-    background: #ffc857;
+    background: #eab445;
     text-shadow: none;
 }
 
 ::selection {
-    background: #ffc857;
+    background: #eab445;
     text-shadow: none;
 }
 
@@ -885,7 +964,7 @@ img::-moz-selection {
 }
 
 body {
-    webkit-tap-highlight-color: #ffc857;
+    webkit-tap-highlight-color: #eab445;
 }
 
 .box-shadow {

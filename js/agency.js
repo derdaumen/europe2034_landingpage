@@ -32,3 +32,11 @@ $("h1").fitText(
     maxFontSize: '65px'
   }
 );
+
+$(".bg").interactive_bg({
+   strength: 20,
+   scale: 1.02,
+   animationSpeed: "100ms",
+   contain: false,
+   wrapContent: false
+ });
