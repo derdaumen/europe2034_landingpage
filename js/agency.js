@@ -28,15 +28,22 @@ $('.navbar-collapse ul li a').click(function() {
 // Fit Text Plugin for Main Header
 $("h1").fitText(
   1.2, {
-    minFontSize: '35px',
-    maxFontSize: '65px'
+    minFontSize: '24px',
+    maxFontSize: '48px'
   }
 );
 
 $(".bg").interactive_bg({
-   strength: 20,
-   scale: 1.02,
-   animationSpeed: "100ms",
-   contain: false,
-   wrapContent: false
- });
+  strength: 20,
+  scale: 1.02,
+  animationSpeed: "100ms",
+  contain: true,
+  wrapContent: false
+});
+// change background size on window resize
+$(window).resize(function() {
+  $(".bg > .ibg-bg").css({
+    width: $(window).outerWidth(),
+    height: $(window).outerHeight()
+  })
+})
