@@ -1,1 +1,21 @@
+/*!
+ * Share app login state
+ * from https://kadira.io/blog/meteor/sharing-meteor-login-state-between-sub-domains
+ */
+function getCookie(t){for(var e=t+"=",n=document.cookie.split(";"),o=0;o<n.length;o++){for(var r=n[o];" "==r.charAt(0);)r=r.substring(1);if(-1!=r.indexOf(e))return r.substring(e.length,r.length)}}LoginState={},LoginState.get=function(t){var e=getCookie(t);return e?JSON.parse(decodeURIComponent(e)):!1};
+/**
+ * cbpAnimatedHeader.min.js v1.0.0
+ * http://www.codrops.com
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ *
+ * Copyright 2013, Codrops
+ * http://www.codrops.com
+ */
+var cbpAnimatedHeader=(function(){var b=document.documentElement,g=document.querySelector(".navbar-default"),e=false,a=300;function f(){window.addEventListener("scroll",function(h){if(!e){e=true;setTimeout(d,250)}},false)}function d(){var h=c();if(h>=a){classie.add(g,"navbar-shrink")}else{classie.remove(g,"navbar-shrink")}e=false}function c(){return window.pageYOffset||b.scrollTop}f()})();
+/**
+ * jQuery Interactive Background
+ * from: https://github.com/peachananr/interactive_bg
+ */
 !function(e){var t={strength:25,scale:1.05,animationSpeed:"100ms",contain:true,wrapContent:false};e.fn.interactive_bg=function(n){return this.each(function(){var r=e.extend({},t,n),i=e(this),s=i.outerHeight(),o=i.outerWidth(),u=r.strength/s,a=r.strength/o,f="ontouchstart"in document.documentElement;if(r.contain==true){i.css({overflow:"hidden"})}if(r.wrapContent==false){i.prepend("<div class='ibg-bg'></div>")}else{i.wrapInner("<div class='ibg-bg'></div>")}if(i.data("ibg-bg")!==undefined){i.find("> .ibg-bg").css({background:"url('"+i.data("ibg-bg")+"') no-repeat center center","background-size":"cover"})}i.find("> .ibg-bg").css({width:o,height:s});if(f||screen.width<=699){window.addEventListener("devicemotion",l,false);function l(e){var t=Math.round(event.accelerationIncludingGravity.x*10)/10,n=Math.round(event.accelerationIncludingGravity.y*10)/10,s=-(t/10)*r.strength,o=-(n/10)*r.strength,u=-(s*2),a=-(o*2);i.find("> .ibg-bg").css({"-webkit-transform":"matrix("+r.scale+",0,0,"+r.scale+","+u+","+a+")","-moz-transform":"matrix("+r.scale+",0,0,"+r.scale+","+u+","+a+")","-o-transform":"matrix("+r.scale+",0,0,"+r.scale+","+u+","+a+")",transform:"matrix("+r.scale+",0,0,"+r.scale+","+u+","+a+")"})}}else{i.mouseenter(function(e){if(r.scale!=1)i.addClass("ibg-entering");i.find("> .ibg-bg").css({"-webkit-transform":"matrix("+r.scale+",0,0,"+r.scale+",0,0)","-moz-transform":"matrix("+r.scale+",0,0,"+r.scale+",0,0)","-o-transform":"matrix("+r.scale+",0,0,"+r.scale+",0,0)",transform:"matrix("+r.scale+",0,0,"+r.scale+",0,0)","-webkit-transition":"-webkit-transform "+r.animationSpeed+" linear","-moz-transition":"-moz-transform "+r.animationSpeed+" linear","-o-transition":"-o-transform "+r.animationSpeed+" linear",transition:"transform "+r.animationSpeed+" linear"}).on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(){i.removeClass("ibg-entering")})}).mousemove(function(e){if(!i.hasClass("ibg-entering")&&!i.hasClass("exiting")){var t=e.pageX||e.clientX,n=e.pageY||e.clientY,t=t-i.offset().left-o/2,n=n-i.offset().top-s/2,f=a*t*-1,l=u*n*-1;i.find("> .ibg-bg").css({"-webkit-transform":"matrix("+r.scale+",0,0,"+r.scale+","+f+","+l+")","-moz-transform":"matrix("+r.scale+",0,0,"+r.scale+","+f+","+l+")","-o-transform":"matrix("+r.scale+",0,0,"+r.scale+","+f+","+l+")",transform:"matrix("+r.scale+",0,0,"+r.scale+","+f+","+l+")","-webkit-transition":"none","-moz-transition":"none","-o-transition":"none",transition:"none"})}}).mouseleave(function(e){if(r.scale!=1)i.addClass("ibg-exiting");i.addClass("ibg-exiting").find("> .ibg-bg").css({"-webkit-transform":"matrix(1,0,0,1,0,0)","-moz-transform":"matrix(1,0,0,1,0,0)","-o-transform":"matrix(1,0,0,1,0,0)",transform:"matrix(1,0,0,1,0,0)","-webkit-transition":"-webkit-transform "+r.animationSpeed+" linear","-moz-transition":"-moz-transform "+r.animationSpeed+" linear","-o-transition":"-o-transform "+r.animationSpeed+" linear",transition:"transform "+r.animationSpeed+" linear"}).on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",function(){i.removeClass("ibg-exiting")})})}})}}(window.jQuery)
