@@ -988,12 +988,12 @@ ul.social-buttons li a:active {
 }
 
 ::-moz-selection {
-    background: #eab445;
+    background: #F15F74;
     text-shadow: none;
 }
 
 ::selection {
-    background: #eab445;
+    background: #F15F74;
     text-shadow: none;
 }
 
