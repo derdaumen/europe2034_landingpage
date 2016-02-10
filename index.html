@@ -15,13 +15,7 @@
   <!-- Custom Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-  <!--
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
--->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -116,8 +110,7 @@
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Mit Szenarien arbeiten</h2>
-          <hr class="hr-primary">
-          <h3 class="section-subheading text-muted">Zukünfte erforschen.</h3>
+          <hr class="hr-primary hr-section-heading">
         </div>
       </div>
       <div class="row">
@@ -261,102 +254,48 @@
   <section id="team" class="">
     <div class="container">
       <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Ein Projekt von</h2>
-          <hr class="hr-primary">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="team-member">
-            <a href="http://ipa-netzwerk.de" title="http://ipa-netzwerk.de" target="blank">
-              <img src="img/logos/ipa_kurz.png" class="img-responsive" alt="" height="100">
-            </a>
-            <a href="http://ipa-netzwerk.de" target="blank"><h4>Institut für prospektive Analysen</h4></a>
+        <div class="col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-1">
+          <div class="row">
+            <div class="col-sm-12 section-heading">
+              <h4 class="">Ein Projekt von:</h4>
+            </div>
           </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="team-member">
-            <a href="http://fez-berlin.de" title="http://fez-berlin.de" target="blank">
-              <img src="img/logos/fez.png" class="img-responsive" alt="">
-            </a>
-            <a href="http://fez-berlin.de" target="blank"><h4>FEZ-Berlin</h4></a>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Gefördert durch</h2>
-          <hr class="hr-primary">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="team-member">
-            <a href="http://www.auswaertiges-amt.de" title="http://www.auswaertiges-amt.de" target="blank">
-              <img src="img/logos/aa.png" class="img-responsive" alt="">
-            </a>
-            <a href="http://www.auswaertiges-amt.de" target="blank"><h4>Auswärtiges Amt</h4></a>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="team-member">
-            <a href="http://www.thefold.org.uk" title="http://www.thefold.org.uk" target="blank">
-              <img src="img/logos/fold.jpg" class="img-responsive" alt="">
-            </a>
-            <a href="http://www.thefold.org.uk" target="blank"><h4>The Fold</h4></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Contact Section -->
-  <!--
-  <section id="contact" class="bg-green">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Schreib uns</h2>
-          <hr class="hr-secondary">
-          <h3 class="section-subheading text-muted">Wir beantworten gerne deine Fragen</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <form name="sentMessage" id="contactForm" action="mail/contact_me.php" method="post" novalidate>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Dein Name *" id="name" required data-validation-required-message="Dein Name *">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" placeholder="Deine Email Adresse *" id="email" required data-validation-required-message="Bitte trage eine existierende Email Adresse ein.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input type="tel" class="form-control" placeholder="Deine Rufnummer" id="phone">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea class="form-control" placeholder="Deine Nachricht *" id="message" required data-validation-required-message="Bitte schreibe uns eine Nachricht."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div id="success"></div>
-                <button type="submit" class="btn btn-xl">Nachricht senden</button>
+          <div class="row">
+            <div class="col-sm-1">
+              <div class="team-member">
+                <a href="http://ipa-netzwerk.de" title="http://ipa-netzwerk.de" target="blank">
+                  <img src="img/logos/ipa_lang.png" class="image-responsive" alt="Institut für prospektive Analysen (IPA)">
+                </a>
               </div>
             </div>
-          </form>
+            <div class="col-sm-1 col-sm-offset-5">
+              <div class="team-member">
+                <a href="http://fez-berlin.de" title="http://fez-berlin.de" target="blank">
+                  <img src="img/logos/fez.png" class="image-responsive" alt="FEZ-Berlin">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="row">
+            <div class="col-sm-12">
+              <h4 class="section-heading">Gefördert durch:</h4>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-1">
+              <div class="team-member">
+                <a href="http://www.auswaertiges-amt.de" title="http://www.auswaertiges-amt.de" target="blank">
+                  <img src="img/logos/aa.png" class="image-responsive" alt="Auswärtiges Amt">
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
--->
   <footer>
     <div class="container">
       <div class="row">
@@ -403,7 +342,16 @@
             <div class="modal-body">
               <h2>Erinnerungen an die Zukunft</h2>
               <p class="item-intro text-muted">Was sind Szenarien?</p>
-              <img class="img-responsive img-centered" src="img/how/futures.jpg" alt="">
+
+              <div class="img-with-caption" about="http://markhensonart.com/galleries/new-pioneers">
+                <a href='http://markhensonart.com/galleries/new-pioneers' target='_blank'>
+                  <img class="img-responsive img-centered" src="img/how/futures.jpg" alt='"New Pioneers" by Mark Henson' title='"New Pioneers" by Mark Henson'>
+                </a>
+                <div class="caption text-muted">
+                  "<a href='http://markhensonart.com/galleries/new-pioneers' target='_blank'>New Pioneers</a>" by <a href='http://markhensonart.com/' target='_blank'>Mark Henson</a>
+                </div>
+              </div>
+
               <p>Szenarien sind Geschichten über die Zukunft, die uns bewegen. In ihnen spielen wir durch, was in der Zukunft passieren könnte und welche Handlungsspielräume uns zur Verfügung stehen.</p>
               <p>Szenarien illustrieren gegenläufige aber gleichermaßen plausible Entwicklungsalternativen und Wahlmöglichkeiten. Unterschiedliche Zukunftsentwürfe können so gleichberechtigt gegenübergestellt und miteinander verglichen werden.</p>
               <p>Das Denken in Szenarien ist menschlichem Denken inhärent. Der Neurologe David Ingvar prägte hierfür den Begriff „memories of the future“, um zu verdeutlichen, dass unsere Entscheidungen und Handlungen eng mit den Geschichten verwoben sind, die wir uns über die Zukunft erzählen. Wir antizipieren mögliche alternative Zukünfte und bereiten uns darauf in der Gegenwart vor.</p>
@@ -432,7 +380,16 @@
               <!-- Project Details Go Here -->
               <h2>Vereinfachen um handeln zu können</h2>
               <p class="item-intro text-muted">Was bewegt dich wirklich?</p>
-              <img class="img-responsive img-centered" src="img/how/whoami.jpg" alt="">
+
+              <div class="img-with-caption" about="https://unsplash.com/photos/0LU4vO5iFpM">
+                <a href='https://unsplash.com/photos/0LU4vO5iFpM' target='_blank'>
+                  <img class="img-responsive img-centered" src="img/how/whoami.jpg" alt='Photo by Greg Rakozy' title='Photo by Greg Rakozy'>
+                </a>
+                <div class="caption text-muted">
+                  <a href='https://unsplash.com/photos/0LU4vO5iFpM' target='_blank'>Photo by Greg Rakozy</a>
+                </div>
+              </div>
+
               <p>Ein wesentlicher Aspekt bei der Entwicklung von Szenarien ist, dass man quasi gezwungen wird, sich Gedanken darüber zu machen, was für die Frage die einen beschäftigt, wirklich wichtig ist. Denn um handeln zu können, müssen wir die Wirklichkeit vereinfachen.</p>
               <p>Die Frage ist also: Was soll berücksichtigt werden und was lässt man außen vor? Es geht nicht um Vollständigkeit, sondern um Bedeutung – und damit um unsere grundlegenden Vorstellungen, mit der wir uns (unbewusst) die Welt erklären.</p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"> zurück</button>
@@ -458,7 +415,25 @@
               <!-- Project Details Go Here -->
               <h2>Eine Landkarte für die Zeit</h2>
               <p class="item-intro text-muted">Was sind deine Handlungsspielräume?</p>
-              <img class="img-responsive img-centered" src="img/how/kompass.jpg" alt="">
+
+              <div class="img-with-caption" about='https://farm8.static.flickr.com/7147/6725778665_fa012c1f6f_b.jpg'>
+                <a href='https://www.flickr.com/photos/nlscotland/6725778665/' target='_blank'>
+                  <img class="img-responsive img-centered" src="img/how/expedition.jpg" xmlns:dct='http://purl.org/dc/terms/' rel='dct:type' alt='Scott&rsquo;s last expedition map, 1923 by National Library of Scotland, on Flickr' title='Scott&rsquo;s last expedition map, 1923 by National Library of Scotland, on Flickr'/>
+                </a>
+                <div class="caption text-muted">
+                  <a href='https://www.flickr.com/photos/nlscotland/6725778665/' target='_blank'>Scott&rsquo;s last expedition map, 1923</a>&quot;&nbsp;(<a rel='license' href='https://www.flickr.com/commons/usage/' target='_blank'>Public Domain</a>)&nbsp;by&nbsp;<a href='https://www.flickr.com/people/nlscotland/' target='_blank'>&nbsp;</a><a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='https://www.flickr.com/people/nlscotland/' target='_blank'>National Library of Scotland</a>
+                </div>
+              </div>
+<!--
+              <div class="img-with-caption" about='https://farm5.static.flickr.com/4102/4925267732_8b4a2cf887_b.jpg'>
+                <a href='https://www.flickr.com/photos/calsidyrose/4925267732/' target='_blank'>
+                  <img class="img-responsive img-centered" src="img/how/expedition.jpg" xmlns:dct='http://purl.org/dc/terms/' alt='Compass Study by Calsidyrose, on Flickr' title='Compass Study by Calsidyrose, on Flickr'>
+                </a>
+                <div class="caption text-muted">
+                  "<a href='https://www.flickr.com/photos/calsidyrose/4925267732/' target='_blank'>Compass Study</a>" (<a rel='license' href='https://creativecommons.org/licenses/by/2.0/' target='_blank'>CC BY 2.0</a>) by <a href='https://www.flickr.com/people/calsidyrose/' target='_blank'></a> <a xmlns:cc='http://creativecommons.org/ns#' rel='cc:attributionURL' property='cc:attributionName' href='https://www.flickr.com/people/calsidyrose/' target='_blank'>Calsidyrose</a>
+                </div>
+              </div>
+-->
               <p>Durch die intensive Auseinandersetzung mit möglichen Zukünften entstehen unterschiedliche Theorien darüber, was wir heute tun können, um Einfluss auf die Entwicklung zu nehmen.</p>
               <p>Das Durchspielen von Szenarien führt dazu, dass man für unterschiedliche Entwicklungen besser gewappnet ist. Denn schon Louis Pasteur wusste: „Glück kommt denen zugute, die darauf vorbereitet sind.“</p>
               <p>Szenarien helfen so, vom passiven Modus – „Hoffentlich wird nichts Schlimmes passieren!“ – hin zu einer Haltung zu kommen, die Handlungsspielräume in den Mittelpunkt stellt: Welche Möglichkeiten haben wir, wenn dieses oder jenes eintritt? Oder: Was können wir tun, um diese oder jene Entwicklung zu unterstützen bzw. zu verhindern?</p>
@@ -486,7 +461,16 @@
               <!-- Project Details Go Here -->
               <h2>Einladung zm Dialog</h2>
               <p class="item-intro text-muted">In welcher Zukunft wollen wir leben?</p>
-              <img class="img-responsive img-centered" src="img/how/histscifi.jpg" alt="">
+
+              <div class="img-with-caption" about="http://www.wardshelley.com/paintings/pages/HistoryofScienceFiction.html">
+                <a href='http://www.wardshelley.com/paintings/pages/HistoryofScienceFiction.html' target='_blank'>
+                  <img class="img-responsive img-centered" src="img/how/histscifi.jpg" alt='The History of Science Fiction, ver. 1 by Ward Shelly' title='The History of Science Fiction, ver. 1 by Ward Shelly'>
+                </a>
+                <div class="caption text-muted">
+                  <a href='http://www.wardshelley.com/paintings/pages/HistoryofScienceFiction.html' target='_blank'>"The History of Science Fiction, ver. 1" by Ward Shelley</a>
+                </div>
+              </div>
+
               <p>Szenarien fördern die Kommunikation mit und über Handlungsspielräume, weil es sich bei Szenarien in der Regel um Geschichten handelt, die nicht nur den analytischen Verstand ansprechen, sondern auch das Emotionale. Sie sind vielschichtig und mehrdeutig, haben Licht- und Schattenseiten – wie das wirkliche Leben.</p>
               <p>Szenarien lassen sich leicht verbreiten, man erzählt sie weiter.</p>
               <p>Szenarien sind in diesem Sinne stets auch als Einladung zum Dialog zu verstehen, sich gemeinsam mit anderen darüber zu verständigen, was für die Zukunft von entscheidender Bedeutung sein wird, in welcher Zukunft wir leben wollen und was wir heute tun müssen, um sie zu verwirklichen.</p>
@@ -557,7 +541,7 @@
   <!-- Plugin JavaScript -->
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/FitText.js/1.2.0/jquery.fittext.min.js"></script>
-  <script type="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
   <script src="js/vendors.js"></script>
   <!-- Custom Theme JavaScript -->
   <script src="js/europe2034.js"></script>

@@ -19,6 +19,9 @@ hr {
 .hr-secondary {
   border-color: #fff;
 }
+.hr-section-heading {
+    padding-bottom: 75px;
+}
 
 .text-muted {
     color: #777;
@@ -41,8 +44,7 @@ p.large {
 a,
 a:hover,
 a:focus,
-a:active,
-a.active {
+a:active,{
     outline: 0;
 }
 
@@ -52,8 +54,7 @@ a {
 
 a:hover,
 a:focus,
-a:active,
-a.active {
+a:active,{
     color: #fbc556;
 }
 
@@ -66,6 +67,24 @@ h6 {
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.img-with-caption {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+.img-with-caption img {
+    margin-bottom: 5px !important;
+}
+.img-with-caption .caption {
+    font-size: 12px;
+    font-style: italic;
+    text-align: right;
+}
+.img-with-caption .caption a,
+.img-with-caption .caption a:hover,
+.img-with-caption .caption a:active {
+    color:#777;
 }
 
 .img-centered {
@@ -245,6 +264,8 @@ fieldset[disabled] .btn-xl.active {
     color: #eab445;
     background-color: #fff;
 }
+
+
 
 .navbar-default {
     border-color: transparent;
@@ -765,7 +786,17 @@ section h3.section-subheading {
         padding: 0 100px 20px 20px;
     }
 }
-
+section#team {
+    padding: 150px 0 50px 0;
+}
+section#team .section-heading {
+    text-align: center;
+}
+@media (min-width:768px) {
+    section#team .section-heading {
+        text-align: left;
+    }
+}
 .team-member {
     margin-bottom: 50px;
     text-align: center;
