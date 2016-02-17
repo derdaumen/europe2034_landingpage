@@ -44,17 +44,17 @@ p.large {
 a,
 a:hover,
 a:focus,
-a:active,{
+a:active{
     outline: 0;
 }
 
 a {
-    color: #eab445;
+    color: #d9a334;
 }
 
 a:hover,
 a:focus,
-a:active,{
+a:active{
     color: #fbc556;
 }
 
@@ -91,12 +91,14 @@ h6 {
     margin: 0 auto;
 }
 
-.bg-primary {
+.bg-primary,
+.bg-blue {
     background-color: #2ca8c2;
     color: #fff;
 }
 
-.bg-secondary {
+.bg-secondary,
+.bg-yellow {
     background-color: #eab445;
 }
 
@@ -104,16 +106,16 @@ h6 {
     background-color: #7cc576;
     color: #515151;
 }
-.bg-gray {
+.bg-grey {
     color: #fff;
     background-color: #515151;
 }
 
-.bg-light-gray {
-    background-color: #f7f7f7;
+.bg-light-grey {
+    background-color: #aaa;
 }
 
-.bg-darkest-gray {
+.bg-darkest-grey {
     background-color: #222;
 }
 
@@ -133,6 +135,8 @@ h6 {
 .btn-primary:focus,
 .btn-primary:active,
 .btn-primary.active,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
 .open .dropdown-toggle.btn-primary {
     color: #fff;
     border-color: #fbc556;
@@ -169,7 +173,19 @@ fieldset[disabled] .btn-primary.active {
     background-color: #fff;
 }
 
-.btn-xl,
+.btn-x1 {
+    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    border-color: #2ca8c2;
+    background-color: #2ca8c2;
+}
+
 .btn-x2 {
     font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -177,13 +193,8 @@ fieldset[disabled] .btn-primary.active {
     padding: 20px 40px;
     text-transform: uppercase;
     color: #fff;
-    border-color: #2ca8c2;
     border-radius: 3px;
-    background-color: #2ca8c2;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-}
-
-.btn-x2 {
     border-color: #eab445;
     background-color: #eab445;
 }
@@ -787,7 +798,7 @@ section h3.section-subheading {
     }
 }
 section#team {
-    padding: 150px 0 50px 0;
+    padding: 150px 0 0 0;
 }
 section#team .section-heading {
     text-align: center;
@@ -798,92 +809,27 @@ section#team .section-heading {
     }
 }
 .team-member {
-    margin-bottom: 50px;
+    margin: 20px;
     text-align: center;
 }
 
-.team-member img {
-    margin: 0 auto;
-    border: 7px solid #fff;
-}
-
-.team-member h4 {
-    margin-top: 25px;
-    margin-bottom: 0;
-    text-transform: none;
-}
-
-.team-member p {
-    margin-top: 0;
-}
-
-aside.clients img {
-    margin: 50px auto;
-}
-
 section#contact {
-    /* background-color: #222; */
-    background-image: url(../img/map-image.png);
+    /*background-image: url(../img/map-image.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
+    padding: 100px 0 50px 0;
 }
-
-section#contact .section-heading {
-    color: #515151;
+section#contact .contact1,
+section#contact .contact2 {
+    text-align: center;
 }
-
-section#contact .form-group {
-    margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-    padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-    height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-    height: 236px;
-}
-
-section#contact .form-control:focus {
-    border-color: #eab445;
-    box-shadow: none;
-}
-
-section#contact::-webkit-input-placeholder {
-    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #bbb;
-}
-
-section#contact:-moz-placeholder {
-    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #bbb;
-}
-
-section#contact::-moz-placeholder {
-    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #bbb;
-}
-
-section#contact:-ms-input-placeholder {
-    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #bbb;
-}
-
-section#contact .text-danger {
-    color: #F15F74;
+@media(min-width:768px) {
+    section#contact .contact1 {
+        text-align: right;
+    }
+    section#contact .contact2 {
+        text-align: left;
+    }
 }
 
 footer {
