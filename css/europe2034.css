@@ -481,7 +481,7 @@ section h3.section-subheading {
     }
 }
 
-#what {
+#project {
     /*position: relative;
     width: 100%;
     min-height: auto;
@@ -491,7 +491,7 @@ section h3.section-subheading {
     /*background-image: url(../img/people_silhouettes_orange.png);
     background-image: url(../img/people_silhouettes_green.png);
     background-image: url(../img/people_silhouettes_blue.png);*/
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center bottom;
     -webkit-background-size: cover;
@@ -500,7 +500,7 @@ section h3.section-subheading {
     background-size: cover;
 }
 
-#how {
+#participate {
     /*position: relative;
     width: 100%;
     min-height: auto;
@@ -519,13 +519,13 @@ section h3.section-subheading {
     background-size: cover;
 }
 
-#how .app-link {
+#participate .app-link {
     text-decoration: none;
     background-color: #eab445;
 }
 
-#how .app-link:hover,
-#how .app-link:active {
+#participate .app-link:hover,
+#participate .app-link:active {
     background-color: #fbc556;
 }
 
@@ -534,19 +534,19 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-#portfolio .portfolio-item {
+#participate .participate-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#portfolio .portfolio-item .portfolio-link {
+#participate .participate-item .participate-link {
     position: relative;
     display: block;
     max-width: 400px;
     margin: 0 auto;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+#participate .participate-item .participate-link .participate-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -557,11 +557,11 @@ section h3.section-subheading {
     background: rgba(254, 209, 54, .9);
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+#participate .participate-item .participate-link .participate-hover:hover {
     opacity: 1;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#participate .participate-item .participate-link .participate-hover .participate-hover-content {
     font-size: 20px;
     position: absolute;
     top: 50%;
@@ -572,16 +572,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#participate .participate-item .participate-link .participate-hover .participate-hover-content i {
     margin-top: -12px;
 }
 
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#participate .participate-item .participate-link .participate-hover .participate-hover-content h3,
+#participate .participate-item .participate-link .participate-hover .participate-hover-content h4 {
     margin: 0;
 }
 
-#portfolio .portfolio-item .portfolio-caption {
+#participate .participate-item .participate-caption {
     max-width: 400px;
     margin: 0 auto;
     padding: 25px;
@@ -589,24 +589,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#portfolio .portfolio-item .portfolio-caption h4 {
+#participate .participate-item .participate-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#portfolio .portfolio-item .portfolio-caption p {
+#participate .participate-item .participate-caption p {
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-style: italic;
     margin: 0;
 }
 
-#portfolio * {
+#participate * {
     z-index: 2;
 }
 
 @media (min-width:767px) {
-    #portfolio .portfolio-item {
+    #participate .participate-item {
         margin: 0 0 30px;
     }
 }
@@ -884,11 +884,11 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-.portfolio-modal {
+.participate-modal {
     background-color: #fff;
 }
 
-.portfolio-modal .modal-content {
+.participate-modal .modal-content {
     min-height: 100%;
     padding: 100px 0;
     text-align: center;
@@ -899,32 +899,32 @@ ul.social-buttons li a:active {
     box-shadow: none;
 }
 
-.portfolio-modal .modal-content h2 {
+.participate-modal .modal-content h2 {
     font-size: 3em;
     margin-bottom: 15px;
 }
 
-.portfolio-modal .modal-content p {
+.participate-modal .modal-content p {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content p.item-intro {
+.participate-modal .modal-content p.item-intro {
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-style: italic;
     margin: 20px 0 30px;
 }
 
-.portfolio-modal .modal-content ul.list-inline {
+.participate-modal .modal-content ul.list-inline {
     margin-top: 0;
     margin-bottom: 30px;
 }
 
-.portfolio-modal .modal-content img {
+.participate-modal .modal-content img {
     margin-bottom: 30px;
 }
 
-.portfolio-modal .close-modal {
+.participate-modal .close-modal {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -934,11 +934,11 @@ ul.social-buttons li a:active {
     background-color: transparent;
 }
 
-.portfolio-modal .close-modal:hover {
+.participate-modal .close-modal:hover {
     opacity: .3;
 }
 
-.portfolio-modal .close-modal .lr {
+.participate-modal .close-modal .lr {
     z-index: 1051;
     width: 1px;
     height: 75px;
@@ -949,7 +949,7 @@ ul.social-buttons li a:active {
     background-color: #222;
 }
 
-.portfolio-modal .close-modal .lr .rl {
+.participate-modal .close-modal .lr .rl {
     z-index: 1052;
     width: 1px;
     height: 75px;
@@ -959,7 +959,7 @@ ul.social-buttons li a:active {
     background-color: #222;
 }
 
-.portfolio-modal .modal-backdrop {
+.participate-modal .modal-backdrop {
     display: none;
     opacity: 0;
 }
