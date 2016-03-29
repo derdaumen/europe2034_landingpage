@@ -51,11 +51,7 @@ $(window).resize(function() {
 // get login state
 var loginState = LoginState.get("europe2034loginstate");
 if(loginState) {
-  // the user has loggedIn to the meteor app
-  // see the loginState Object for the addtional data
-  // (append your code here!)
   console.log(loginState);
 } else {
-  // user has not loggedIn yet.
-  // (append your code here!)
+  console.log('not logged in');
 }
